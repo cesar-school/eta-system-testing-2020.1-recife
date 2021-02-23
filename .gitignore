@@ -1,3 +1,17 @@
+# Mac
+.DS_Store
+
+# Intellij
+.idea/
+*.iml
+
+# Maven
+log/
+target/
+
+# System testing
+src/test/resources/chromedriver
+
 # Compiled class file
 *.class
 
