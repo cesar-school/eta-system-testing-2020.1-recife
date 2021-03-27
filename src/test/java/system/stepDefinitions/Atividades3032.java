@@ -1,4 +1,4 @@
 package system.stepDefinitions;
 
-public class StepDefinitions {
+public class Atividades3032 {
 }

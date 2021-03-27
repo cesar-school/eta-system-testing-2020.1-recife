@@ -366,18 +366,19 @@ class Main {
         // GIVEN
         MainPage mainPage = new MainPage();
         LeftNavMenu leftNavMenu = new LeftNavMenu();
+        TableSortSearchPage tableSortSearchPage = new TableSortSearchPage();
         int quantidadeEsperadaLinhasTabela = 7;
 
         // WHEN
         mainPage.acessarPagina();
-        TableSortSearchPage tableSortSearchPage = leftNavMenu.navegarParaTableSortSearch();
+        leftNavMenu.navegarParaTableSortSearch();
         tableSortSearchPage.pesquisarPor("London");
 
         // THEN
         assertEquals(
-                quantidadeEsperadaLinhasTabela,
-                tableSortSearchPage.getQuantidadeLinhasTabela(),
-                "Depois de filtrada por 'London' a tabela mostra 7 resultados");
+            quantidadeEsperadaLinhasTabela,
+            tableSortSearchPage.getQuantidadeLinhasTabela(),
+            "Depois de filtrada a tabela mostra 7 resultados");
 
         // FINALLY
         DriverManager.endSession();

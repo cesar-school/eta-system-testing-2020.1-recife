@@ -35,9 +35,13 @@ public class LeftNavMenu {
         this.wait = DriverManager.getDriverWait();
     }
 
-    public TableSortSearchPage navegarParaTableSortSearch() {
+//    public TableSortSearchPage navegarParaTableSortSearch() {
+//        this.clicarBotaoSubMenu(tableBotaoSeletor, tableSortSearchBotaoSeletor);
+//        return new TableSortSearchPage();
+//    }
+
+    public void navegarParaTableSortSearch() {
         this.clicarBotaoSubMenu(tableBotaoSeletor, tableSortSearchBotaoSeletor);
-        return new TableSortSearchPage();
     }
 
     public void navegarParaTablePagination() {
